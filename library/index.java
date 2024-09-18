@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class index {
     private static Scanner scanner = new Scanner(System.in);
      public static void main(String[] args) {
-        registerBook book = new registerBook();
-        registerPerson person = new registerPerson();
+        book book = new book();
+        person person = new person();
         int choice = 99;
         while(choice != 0){
             System.out.println("-----------------------");
@@ -44,7 +44,10 @@ public class index {
                 System.out.print("CPF: ");
                 int cpf = scanner.nextInt();
                 person.setCpf(cpf);
-                
+                System.out.print("Address: ");
+                String personAddress = scanner.nextLine();
+                person.setAddress(personAddress);
+
                //REGISTER LOCALHOST
                
             }

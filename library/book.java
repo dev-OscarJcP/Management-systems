@@ -1,4 +1,4 @@
-public class registerBook {
+public class book {
     private String bookName;
     private String authorName;
     private String publicationDate;
